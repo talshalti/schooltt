@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <ScrollView
+        android:id="@+id/svTable"
+        android:layout_width="match_parent"
+        android:layout_height="0dip"
+        android:layout_weight="1" >
+    </ScrollView>
+
+    <ViewFlipper
+        android:id="@+id/vfBottomBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="7dp" >
+
+        <LinearLayout
+            android:id="@+id/llBeforeEdit"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal" >
+
+            <View
+                android:layout_width="0dip"
+                android:layout_height="match_parent"
+                android:layout_weight="1" />
+
+            <Button
+                android:id="@+id/bStartEdit"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="ערוך" >
+            </Button>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/llEdit"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal" >
+
+            <com.aplus.Displays.SubjectDisplay
+                android:id="@+id/tvChooseClass"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1" />
+
+            <Button
+                android:id="@+id/bCancelEdit"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="ביטול" />
+
+            <Button
+                android:id="@+id/bSaveEdit"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="שמור" />
+        </LinearLayout>
+    </ViewFlipper>
+
+</LinearLayout>

@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="10dp"
+    android:orientation="vertical" >
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="100" >
+
+                
+
+                <Button
+                    android:id="@+id/bNext"
+                    style="?android:attr/buttonStyleSmall"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="20"
+                    android:text="הבא" />
+                
+                <TextView
+                    android:id="@+id/tvDay"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="60"
+                    android:gravity="center"
+                    android:text="יום ראשון" />
+                <Button
+                    android:id="@+id/bPrev"
+                    style="?android:attr/buttonStyleSmall"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="20"
+                    android:enabled="false"
+                    android:text="הקודם" />
+            </LinearLayout>
+
+            <AutoCompleteTextView
+                android:id="@+id/etHour0"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:hint="אפס" />
+
+            <AutoCompleteTextView
+                android:id="@+id/etHour1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:hint="ראשונה" >
+
+                <requestFocus
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </AutoCompleteTextView>
+
+            <AutoCompleteTextView
+                android:id="@+id/etHour2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:hint="שניה" />
+
+            <AutoCompleteTextView
+                android:id="@+id/etHour3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:hint="שלישית" />
+
+            <AutoCompleteTextView
+                android:id="@+id/etHour4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:hint="רביעית" />
+
+            <AutoCompleteTextView
+                android:id="@+id/etHour5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:hint="חמישית" />
+
+            <AutoCompleteTextView
+                android:id="@+id/etHour6"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:hint="שישית" />
+
+            <AutoCompleteTextView
+                android:id="@+id/etHour7"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:hint="שביעית" />
+
+            <AutoCompleteTextView
+                android:id="@+id/etHour8"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:hint="שמינית" />
+
+            <AutoCompleteTextView
+                android:id="@+id/etHour9"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:hint="תשיעית" />
+
+            <AutoCompleteTextView
+                android:id="@+id/etHour10"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:hint="עשירית" />
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>
